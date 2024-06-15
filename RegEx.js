@@ -116,3 +116,11 @@ match (same word) => is is, text text, double double, i i, not not, why why, rai
 
 //----- (08) - split()
 // work in index.html and sketch.js file
+
+
+//----- (09) - replace()
+// work in index.html and sketch.js file
+
+
+//----- (10) - replace()
+// work in index.html and sketch.js file

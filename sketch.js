@@ -141,3 +141,91 @@ function newText() {
     }
 }
 */
+
+
+
+//----- (09) - replace()
+
+// in terminal
+/*
+var s = "unicorns and rainbows";
+s.replace(/unicorns/,"cupcakes");
+out := "cupcakes and rainbows"
+
+var s = "unicorns and rainbows and cupcakes";
+s.replace(/\w{6,8}/,"kittens");
+out := kittens and rainbows and cupcakes
+s => unicorns and rainbows and cupcakes
+s.replace(/\w{8}/g,"kittens");
+out := "kittens and kittens and kittens";
+
+var s = "unicorns and rainbows and cupcakes";
+s.replace(/([aeiou])/g,"$1$1");
+out := "uuniicoorns aand raaiinboows aand cuupcaakees"
+*/
+
+
+/*
+function newText() {
+    var s = textfield.value();
+    var r = /\b\w+\b/;
+    // var r = /\b\w+\b/g;
+
+    var newstring = s.replace(r, replacer);
+    console.log(newstring);
+    createP(newstring);
+}
+    
+*/
+/*
+function replacer(match) { 
+    console.log(match);
+
+    return "blueberry";
+}
+*/
+
+/*
+// to upper case
+function replacer(match) {
+    if (match.length == 4) {
+        return match.toUpperCase();
+    } else {
+        return match;
+    }
+}
+*/
+
+/*
+// (02)
+function newText() {
+    var s = textfield.value();
+    var r = /\d{3}-\d{4}/g;
+
+    var newstring = s.replace(r, replacer);
+    // console.log(newstring);
+    createP(newstring);
+}
+
+function replacer(match) { 
+    console.log(match);
+    return match;
+}
+*/
+
+
+
+//----- (10) - word indicator()
+
+function newText() {
+    var s = textfield.value();
+
+    var words = s.split(/\W+/);
+    for (var i = 0; i < words.length; i++) {
+        createSpan(words[i]);
+        createSpan(' ');
+    }
+
+    // console.log(words);
+    // createP(s);
+}
